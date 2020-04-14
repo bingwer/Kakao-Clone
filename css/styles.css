@@ -1,0 +1,48 @@
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "setting.css";
+@import "chat.css";
+@import "mobile.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  /* 이것의 의미는 본래 css에서 padding을 추가하면 기존 요소의 크기가 padding만큼 증가한다.
+       ex) width 300px 박스에 20px 패딩을 추가하면 총 크기는 320px가 됨
+       하지만 border-box로 할 경우 패딩의 크기만큼 기존 요소의 크기가 증가하지 않음
+    */
+}
+
+body {
+  background-color: white;
+  padding: 10px 20px;
+  color: #020202;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: inherit; /*부모 요소의 색을 받아옴*/
+  text-decoration: none; /*링크의 밑줄을 없앰*/
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in-out;
+}

@@ -1,0 +1,75 @@
+.user {
+  width: 100%;
+  background-color: inherit;
+  margin-top: 135px;
+}
+
+.user .user__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user__header .user__avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: url(https://images.unsplash.com/photo-1520410006060-eb5c4710b802?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-position: center;
+  background-size: cover;
+}
+
+.user__header .user__name {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 900;
+  color: #2799fa;
+}
+
+.user__header .user__location {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.user .user__buttons {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.user__buttons .user__button {
+  background-color: white;
+  width: 135px;
+  height: 45px;
+  border-radius: 13px;
+  font-size: 17px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 10px rgba(164, 164, 165, 0.8);
+  cursor: pointer;
+}
+
+.user__buttons .user__button:last-child {
+  background-color: #2799fa;
+  color: white;
+}
+
+.user .user__infos {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 45px;
+}
+
+.user__infos .user__infos-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  opacity: 0.7;
+  line-height: 15px;
+}

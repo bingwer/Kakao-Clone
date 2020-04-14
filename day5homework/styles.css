@@ -1,0 +1,45 @@
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  margin-bottom: 50px;
+  padding-top: 15px;
+  width: 200px;
+  height: 50px;
+  background-color: #848484;
+  color: white;
+  font-size: 20px;
+  text-align: center; /* 글자 수평정렬 */
+  border-radius: 1cm;
+  transition: background-color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.picture {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease-in-out;
+}
+
+.box:hover {
+  background-color: #bdbdbd;
+  box-shadow: 2px 2px 2px 1px gray;
+}
+
+.box:hover + .picture {
+  transform: rotate(135deg) scale(0.6, 0.6);
+  border: 5px solid black;
+}

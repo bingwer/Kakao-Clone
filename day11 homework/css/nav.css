@@ -1,0 +1,26 @@
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  height: 40px;
+  bottom: 0px;
+  box-shadow: 5px 5px 40px rgba(118, 146, 180, 0.5);
+}
+
+.nav-bar .nav-bar__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #868686;
+  cursor: pointer;
+}
+
+.nav-bar__list .nav-bar__column1:hover,
+.nav-bar__list .nav-bar__column2:hover,
+.nav-bar__list .nav-bar__column3:hover,
+.nav-bar__list .nav-bar__column4:hover {
+  color: #e75f6d;
+}

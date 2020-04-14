@@ -1,0 +1,72 @@
+.recipes {
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.recipes .recipes__title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.recipes__title .recipes__title-column {
+  font-size: 10px;
+  font-weight: 700;
+  color: #474747;
+}
+
+.recipes__title .recipes__title-column2 {
+  font-size: 9px;
+  font-weight: 700;
+  color: #e75f6d;
+}
+
+.recipes__menu {
+  margin-top: 10px;
+}
+
+.recipes__menu .recipes__menu-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.recipes__menu-list .recipes__menu-column {
+  width: 115px;
+  height: 75px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+
+.recipes__menu-list:first-child .recipes__menu-column:first-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgb(0, 0, 0, 0.4) 80%),
+    url(https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+  background-position: center;
+  background-size: cover;
+}
+
+.recipes__menu-list:first-child .recipes__menu-column:last-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgb(0, 0, 0, 0.4) 80%),
+    url(https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+  background-position: center;
+  background-size: cover;
+}
+
+.recipes__menu-list:last-child .recipes__menu-column:first-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgb(0, 0, 0, 0.4) 80%),
+    url(https://images.unsplash.com/photo-1564228511783-821f2f547f44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+  background-position: center;
+  background-size: cover;
+}
+
+.recipes__menu-list:last-child .recipes__menu-column:last-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgb(0, 0, 0, 0.4) 80%),
+    url(https://images.unsplash.com/photo-1543573852-1a71a6ce19bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60);
+  background-position: center;
+  background-size: cover;
+}

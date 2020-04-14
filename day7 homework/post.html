@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <title>Post | Insta-Clone</title>
+</head>
+
+<body>
+    <header class="post">
+        <div class="post__header-column">
+            <a href="index.html" class="header__back-btn">
+                <i class="fas fa-arrow-left fa-2x"></i>
+            </a>
+        </div>
+        <img class="post__avatar g-avatar" src="images/avatar1.png">
+        <span class="post__username username">
+            Sarah
+        </span>
+        <span class="post__timestamp">
+            5 min
+        </span>
+        </div>
+        <div class="post__header-column">
+            <span class="post__icon">
+                <i class="fas fa-ellipsis-h"></i>
+            </span>
+        </div>
+    </header>
+
+    <main class="posts">
+        <div class="posts__post post">
+            <div class="post__content">
+                <img class="post__picture" src="images/image.jpg">
+                <span class="post_writing">My Best Friends!</span>
+            </div>
+        </div>
+        <div class="posts__nav">
+            <div class="nav__column">
+                <i class="far fa-heart"></i>
+                <span class="heart-amount">2321</span>
+            </div>
+            <div class="nav__column">
+                <i class="far fa-comment-alt"></i>
+                <sapn class="comment-amount">133</sapn>
+            </div>
+            <div class="nav__column">
+                <i class="far fa-bookmark"></i>
+            </div>
+        </div>
+    </main>
+
+    <section class="comments">
+        <ul class="comments__list">
+            <li class="comments__commment comment">
+                <div class="comment__column">
+                    <img class="comment__avatar g-avatar avatar--sm" src="images/avatar2.png">
+                    <div class="comment__content">
+                        <span class="comment__username username">
+                            Alex
+                        </span>
+                        <span class="comment__preview">
+                            Awesome photo!
+                        </span>
+                    </div>
+                </div>
+                <div class="comment__column">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="comment__column">
+                    <i class="fas fa-share"></i>
+                </div>
+            </li>
+            <li class="comments__commment comment">
+                <div class="comment__column">
+                    <img class="comment__avatar g-avatar avatar--sm" src="images/avatar4.png">
+                    <div class="comment__content">
+                        <span class="comment__username username">
+                            Elsa
+                        </span>
+                        <span class="comment__preview">
+                            Wow!
+                        </span>
+                    </div>
+                </div>
+                <div class="comment__column">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="comment__column">
+                    <i class="fas fa-share"></i>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <nav class="comment__write">
+        <div class="comment__write-column">
+            <img class="comment__avatar g-avatar avatar--sm" src="images/avatar3.png">
+        </div>
+        <div class="comment__write-column">
+            <input type="text" placeholder="Add a comment" class="comment__write-input" />
+        </div>
+        <div class=" comment__write-column">
+            <i class="fab fa-telegram"></i>
+        </div>
+    </nav>
+</body>
+
+</html>
