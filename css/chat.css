@@ -13,11 +13,15 @@
   padding: 10px 0px;
   padding-top: 100px;
   background-image: url(../images/chatBg.png);
-  min-height: 5000px; /*최소 높이를 뷰포트 전체로*/
+  min-height: 100vh; /*최소 높이를 뷰포트 전체로*/
 }
 
 .chats__body-me {
   background-image: url(../images/chatBgMe.png);
+}
+
+.chats__body-gr {
+  background-image: url(../images/chatBgGr.png);
 }
 
 .chats__body .header,
@@ -198,6 +202,19 @@
   }
 }
 
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
 .incoming-message img {
   width: 30px;
   border-radius: 15px;
@@ -210,6 +227,10 @@
 
 .incoming-message-me img {
   animation: pulse 1s ease-in-out infinite;
+}
+
+.incoming-message-gr img {
+  animation: flash 5s ease-in-out infinite;
 }
 
 .message__bubble img {

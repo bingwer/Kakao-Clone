@@ -7,6 +7,7 @@
 .friend .friend__avatar {
   width: 50px;
   border-radius: 38%;
+  margin-right: 15px;
 }
 
 .friend__avatar.g-avatar {
@@ -17,14 +18,29 @@
   width: 60px;
 }
 
+.friend__avatar.s-avatar {
+  width: 25px;
+  margin: 0px 0px;
+}
+
 .friend .friend__column {
   display: flex;
   align-items: center;
   margin-top: 15px;
 }
 
-.friend .friend__avatar {
+.friend .friend__column-group {
+  width: 60px;
+  display: flex;
   margin-right: 15px;
+}
+}
+
+.column__group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .friend__column .friend__name {
@@ -40,6 +56,13 @@
   width: 15px;
   height: 15px;
   margin-right: 5px;
+}
+
+.friend__alt {
+  width: 10px;
+  height: 10px;
+  margin-top: 3px;
+  margin-left: 5px;
 }
 
 .friend__content .friend__status,
