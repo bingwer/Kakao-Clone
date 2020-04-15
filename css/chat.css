@@ -18,7 +18,7 @@
 
 .chats__body-me {
   background-image: url(../images/chatBgMe.png);
-  min-height: 3300px;
+  min-height: 3400px;
 }
 
 .chats__body-gr {
@@ -269,6 +269,11 @@
 .incoming-message .message__bubble {
   border-bottom-left-radius: 0;
   background-image: linear-gradient(to right, #7b4397, #dc2430);
+}
+
+.incoming-message .message__bubble-me {
+  border-bottom-left-radius: 0;
+  background-image: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
 }
 
 .sent-message .message__bubble {
