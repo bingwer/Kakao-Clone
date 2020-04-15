@@ -16,6 +16,10 @@
   min-height: 5000px; /*최소 높이를 뷰포트 전체로*/
 }
 
+.chats__body-me {
+  background-image: url(../images/chatBgMe.png);
+}
+
 .chats__body .header,
 .chats__body .status-bar {
   padding: 0px 20px;
@@ -138,12 +142,59 @@
   align-self: flex-end;
 }
 
+.message__timestamp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+}
+
+.message__timestamp-me {
+  align-self: flex-end;
+}
+
+.timestamp-me {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+
+.timestamp__badge {
+  font-size: 12px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
 @keyframes spin {
   from {
     transform: none;
   }
   to {
     transform: rotateY(1turn);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.3, 1.3, 1.3);
+    transform: scale3d(1.3, 1.3, 1.3);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 
@@ -157,6 +208,17 @@
   animation: spin 1s linear infinite;
 }
 
+.incoming-message-me img {
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.message__bubble img {
+  width: 150px;
+  margin-right: 0px;
+  animation: none;
+  box-shadow: none;
+}
+
 .message .message__bubble {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
@@ -166,6 +228,12 @@
   color: white;
   font-weight: 600;
   display: block;
+}
+
+.message .message__bubble-me {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
 }
 
 .incoming-message .message__author {

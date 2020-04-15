@@ -20,6 +20,7 @@
 .friend .friend__column {
   display: flex;
   align-items: center;
+  margin-top: 15px;
 }
 
 .friend .friend__avatar {
@@ -29,6 +30,16 @@
 .friend__column .friend__name {
   display: block;
   margin-bottom: 5px;
+}
+
+.friend__content-me {
+  display: flex;
+}
+
+.friend__me {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
 }
 
 .friend__content .friend__status,
