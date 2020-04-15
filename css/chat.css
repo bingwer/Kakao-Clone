@@ -13,11 +13,12 @@
   padding: 10px 0px;
   padding-top: 100px;
   background-image: url(../images/chatBg.png);
-  min-height: 100vh; /*최소 높이를 뷰포트 전체로*/
+  min-height: 100vh; /* 100vh = 최소 높이를 뷰포트 전체로*/
 }
 
 .chats__body-me {
   background-image: url(../images/chatBgMe.png);
+  min-height: 3300px;
 }
 
 .chats__body-gr {
@@ -235,6 +236,7 @@
 
 .message__bubble img {
   width: 150px;
+  margin-top: 10px;
   margin-right: 0px;
   animation: none;
   box-shadow: none;
