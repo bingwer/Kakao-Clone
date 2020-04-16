@@ -84,6 +84,7 @@
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 14px;
+  display: flex;
 }
 
 .friend__now-listening span {
@@ -93,6 +94,7 @@
 .friend__now-listening i {
   font-size: 12px;
   color: #52e084;
+  z-index: 2;
 }
 
 .friend__add-btn {
@@ -110,4 +112,21 @@
   opacity: 0.5;
   font-size: 15px;
   margin-top: 2px;
+}
+
+.friend__listening-title {
+  overflow: hidden;
+}
+
+.friend__listening-content {
+  animation: moving 10s linear infinite;
+}
+
+@keyframes moving {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
